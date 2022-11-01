@@ -1,0 +1,18 @@
+public class Palindrom {
+    public static boolean palin(String str){
+        int s=0;
+        int l=str.length()-1;
+        while(s<l){
+            if(str.charAt(s)==str.charAt(l)){
+                s++;
+                l--;
+            }
+            else return false;
+        }
+        return true;
+    }
+    public static void main(String[] args) {
+        String str="racecar";
+        System.out.println( palin(str));
+    }
+}
